@@ -1,131 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Assignment 3</title>
-    <style>
-        /* General Styling */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f5f5f5;
-        }
-
-        h1 {
-            text-align: center;
-            color: #2c3e50;
-        }
-
-        /* Table Styling */
-        table {
-            border: 1px solid black;
-            border-collapse: collapse;
-            margin: 20px auto;
-            spacing: 1px;
-            padding: 1px;
-        }
-
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: left;
-        }
-
-        /* Classes */
-        .middle {
-            margin: 0 auto;
-        }
-
-        .center {
-            text-align: center;
-        }
-
-        .right {
-            text-align: right;
-        }
-
-        .green {
-            background-color: green;
-            color: white;
-        }
-
-        .blue {
-            background-color: blue;
-            color: white;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>HTML Assignment 3</title>
+  <style>
+    table.middle {
+      border: 1px solid black;
+      border-spacing: 1px;
+      padding: 1px;
+    }
+    td, th {
+      border: 1px solid black;
+      padding: 5px;
+    }
+    .center {
+      text-align: center;
+    }
+    .right {
+      text-align: right;
+    }
+    .green {
+      background-color: green;
+      color: white;
+    }
+    .blue {
+      background-color: blue;
+      color: white;
+    }
+    h1 {
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
 
-    <!-- Heading -->
-    <h1>HTML Assignment #3</h1>
+  <h1>HTML Assignment #3</h1>
 
-    <!-- Table 1 -->
-    <h2>Table 1</h2>
-    <table id="table-1" class="middle">
-        <tr>
-            <td id="t11">Row 1, Col 1</td>
-            <td id="t12">Row 1, Col 2</td>
-            <td id="t13" class="right">Row 1, Col 3</td>
-        </tr>
-        <tr class="center">
-            <td>Row 2, Col 1</td>
-            <td>Row 2, Col 2</td>
-            <td class="right">Row 2, Col 3</td>
-        </tr>
-        <tr>
-            <td>Row 3, Col 1</td>
-            <td>Row 3, Col 2</td>
-            <td class="right">Row 3, Col 3</td>
-        </tr>
-    </table>
+  <!-- Table 1 -->
+  <table id="table-1" class="middle">
+    <tr>
+      <td id="t11">Row 1, Col 1</td>
+      <td id="t12">Row 1, Col 2</td>
+      <td id="t13" class="right">Row 1, <strong>Col 3</strong></td>
+    </tr>
+    <tr class="center">
+      <td>Row 2, Col 1</td>
+      <td>Row 2, Col 2</td>
+      <td class="right">Row 2, <em>Col 3</em></td>
+    </tr>
+    <tr>
+      <td>Row 3, Col 1</td>
+      <td>Row 3, Col 2</td>
+      <td class="right">Row 3, <strong>Col 3</strong></td>
+    </tr>
+  </table>
 
-    <!-- Table 2 -->
-    <h2>Table 2</h2>
-    <table id="table-2" class="middle">
-        <tr>
-            <td id="t21" colspan="6" class="center"><strong>First Row (colspan = 6)</strong></td>
-        </tr>
-        <tr>
-            <td>R2C1</td><td>R2C2</td><td>R2C3</td><td>R2C4</td><td>R2C5</td><td>R2C6</td>
-        </tr>
-        <tr>
-            <td>R3C1</td><td>R3C2</td><td>R3C3</td><td>R3C4</td><td>R3C5</td><td>R3C6</td>
-        </tr>
-        <tr>
-            <td>R4C1</td><td>R4C2</td><td>R4C3</td><td>R4C4</td><td>R4C5</td><td>R4C6</td>
-        </tr>
-        <tr>
-            <td>R5C1</td><td>R5C2</td><td>R5C3</td><td>R5C4</td><td>R5C5</td><td>R5C6</td>
-        </tr>
-        <tr>
-            <td>R6C1</td><td>R6C2</td><td>R6C3</td><td>R6C4</td><td>R6C5</td><td>R6C6</td>
-        </tr>
-    </table>
+  <br>
 
-    <!-- Table 3 -->
-    <h2>Table 3</h2>
-    <table id="table-3" class="middle">
-        <tr class="green">
-            <td>Row 1, Col 1</td>
-            <td>Row 1, Col 2</td>
-            <td>Row 1, Col 3</td>
-        </tr>
-        <tr>
-            <td>Row 2, Col 1</td>
-            <td id="t-image">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/HTML5_logo_and_wordmark.svg/1280px-HTML5_logo_and_wordmark.svg.png" 
-                     alt="HTML5 Logo" width="100">
-            </td>
-            <td>Row 2, Col 3</td>
-        </tr>
-        <tr class="blue">
-            <td>Row 3, Col 1</td>
-            <td>Row 3, Col 2</td>
-            <td>Row 3, Col 3</td>
-        </tr>
-    </table>
+  <!-- Table 2 -->
+  <table id="table-2" class="middle">
+    <tr>
+      <td id="t21" colspan="6">Header spanning 6 columns</td>
+    </tr>
+    <tr>
+      <td>R2C1</td><td>R2C2</td><td>R2C3</td><td>R2C4</td><td>R2C5</td><td>R2C6</td>
+    </tr>
+    <tr>
+      <td>R3C1</td><td>R3C2</td><td>R3C3</td><td>R3C4</td><td>R3C5</td><td>R3C6</td>
+    </tr>
+    <tr>
+      <td>R4C1</td><td>R4C2</td><td>R4C3</td><td>R4C4</td><td>R4C5</td><td>R4C6</td>
+    </tr>
+    <tr>
+      <td>R5C1</td><td>R5C2</td><td>R5C3</td><td>R5C4</td><td>R5C5</td><td>R5C6</td>
+    </tr>
+    <tr>
+      <td>R6C1</td><td>R6C2</td><td>R6C3</td><td>R6C4</td><td>R6C5</td><td>R6C6</td>
+    </tr>
+  </table>
+
+  <br>
+
+  <!-- Table 3 -->
+  <table id="table-3" class="middle">
+    <tr class="green">
+      <td colspan="3">This is the first row with green background</td>
+    </tr>
+    <tr>
+      <td>Row 2, Col 1</td>
+      <td id="t-image">
+        <img src="https://via.placeholder.com/100" alt="Sample Image">
+      </td>
+      <td>Row 2, Col 3</td>
+    </tr>
+    <tr class="blue">
+      <td colspan="3">This is the last row with blue background</td>
+    </tr>
+  </table>
 
 </body>
 </html>
