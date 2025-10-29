@@ -4,80 +4,99 @@
     <meta charset="UTF-8">
     <title>HTML Assignment 3</title>
     <style>
-        /* General Table Styling */
         table.middle {
-            border-collapse: collapse;
+            border-collapse: separate;
+            border-spacing: 1px;
             border: 1px solid black;
-            margin: 20px auto;
+            margin: 24px auto;
         }
         table.middle td, table.middle th {
             border: 1px solid black;
             padding: 1px;
-            text-align: left;
         }
         .center {
-            text-align: center !important;
+            text-align: center;
         }
         .right {
-            text-align: right !important;
+            text-align: right;
         }
         .green {
             background-color: #44c767;
         }
         .blue {
             background-color: #1e90ff;
-            color: #fff;
+            color: white;
         }
-        /* Page Heading */
         h1 {
             text-align: center;
         }
     </style>
 </head>
 <body>
+    <!-- Centered Heading -->
     <h1>HTML Assignment #3</h1>
-    <h2>Description: Use of HTML Tables</h2>
-    <p>
-        This assignment demonstrates the use of HTML tables with classes, IDs, borders, spacing, image insertion, and background coloring as required.
-    </p>
 
     <!-- Table 1 -->
-    <h3>Table 1: Classes and IDs</h3>
+    <h2>Table 1</h2>
     <table id="table-1" class="middle">
         <tr>
-            <td id="t11">Cell 1</td>
-            <td id="t12" class="center">Cell 2</td>
-            <td id="t13" class="right">Cell 3</td>
+            <td id="t11">R1C1</td>
+            <td id="t12" class="center">R1C2</td>
+            <td id="t13" class="right">R1C3</td>
         </tr>
         <tr>
-            <td class="center">Row 2, Col 1</td>
-            <td class="center">Row 2, Col 2</td>
-            <td class="right">Row 2, Col 3</td>
+            <td class="center">R2C1</td>
+            <td class="center">R2C2</td>
+            <td class="right">R2C3</td>
         </tr>
         <tr>
-            <td>Row 3, Col 1</td>
-            <td class="center">Row 3, Col 2</td>
-            <td class="right">Row 3, Col 3</td>
+            <td>R3C1</td>
+            <td class="center">R3C2</td>
+            <td class="right">R3C3</td>
         </tr>
     </table>
 
     <!-- Table 2 -->
-    <h3>Table 2: Colspan</h3>
+    <h2>Table 2</h2>
     <table id="table-2" class="middle">
         <tr>
-            <td id="t21" colspan="6">Header spanning 6 columns</td>
+            <td id="t21" colspan="6">Row 1, only cell (colspan=6)</td>
         </tr>
         <tr>
-            <td>2,1</td><td>2,2</td><td>2,3</td><td>2,4</td><td>2,5</td><td>2,6</td>
+            <td>R2C1</td><td>R2C2</td><td>R2C3</td><td>R2C4</td><td>R2C5</td><td>R2C6</td>
         </tr>
         <tr>
-            <td>3,1</td><td>3,2</td><td>3,3</td><td>3,4</td><td>3,5</td><td>3,6</td>
+            <td>R3C1</td><td>R3C2</td><td>R3C3</td><td>R3C4</td><td>R3C5</td><td>R3C6</td>
         </tr>
         <tr>
-            <td>4,1</td><td>4,2</td><td>4,3</td><td>4,4</td><td>4,5</td><td>4,6</td>
+            <td>R4C1</td><td>R4C2</td><td>R4C3</td><td>R4C4</td><td>R4C5</td><td>R4C6</td>
         </tr>
         <tr>
-            <td>5,1</td><td>5,2</td><td>5,3</td><td>5,4</td><td>5,5</td><td>5,6</td>
+            <td>R5C1</td><td>R5C2</td><td>R5C3</td><td>R5C4</td><td>R5C5</td><td>R5C6</td>
         </tr>
         <tr>
-            <td>6,1</td><td>6,2</td><td>6,3</td><td>6,4</td><td>6,5</td><td>6,6</td>
+            <td>R6C1</td><td>R6C2</td><td>R6C3</td><td>R6C4</td><td>R6C5</td><td>R6C6</td>
+        </tr>
+    </table>
+
+    <!-- Table 3 -->
+    <h2>Table 3</h2>
+    <table id="table-3" class="middle">
+        <tr class="green">
+            <td>Green1</td>
+            <td>Green2</td>
+            <td>Green3</td>
+        </tr>
+        <tr>
+            <td>Normal1</td>
+            <td id="t-image"><img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg" alt="Sample Image" width="100"></td>
+            <td>Normal3</td>
+        </tr>
+        <tr class="blue">
+            <td>Blue1</td>
+            <td>Blue2</td>
+            <td>Blue3</td>
+        </tr>
+    </table>
+</body>
+</html>
